@@ -1,0 +1,3 @@
+execute as @s if items entity @s weapon.mainhand *[enchantments~[{enchantments:"magnetic_enchantment:magnetic", levels:1}]] at @e[type=item, distance=..12] run particle minecraft:portal ~ ~ ~ 0.2 0.2 0.2 0.05 5
+execute as @s if items entity @s weapon.mainhand *[enchantments~[{enchantments:"magnetic_enchantment:magnetic", levels:1}]] at @s rotated ~ 0 run particle portal ^ ^ ^2 0.4 0.4 0.4 0.1 32
+execute as @s if items entity @s weapon.mainhand *[enchantments~[{enchantments:"magnetic_enchantment:magnetic", levels:1}]] at @s rotated ~ 0 run tp @e[type=item, distance=..12] ^ ^ ^2

@@ -1,0 +1,71 @@
+{
+  "description": "Dolphin Swim",
+  "supported_items": "#minecraft:foot_armor",
+  "primary_items": "#minecraft:foot_armor",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "movement_affected_by": {
+                  "fluid": {
+                    "fluids": [
+                      "minecraft:flowing_lava",
+                      "minecraft:flowing_water",
+                      "minecraft:lava",
+                      "minecraft:water"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:location_check",
+              "offsetY": 1,
+              "predicate": {
+                "block": {
+                  "blocks": "#minecraft:air"
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:dolphins_grace",
+          "min_duration": 9,
+          "max_duration": 11,
+          "min_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  }
+}

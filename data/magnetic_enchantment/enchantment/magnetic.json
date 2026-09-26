@@ -1,0 +1,53 @@
+{
+  "description": "Magnetic",
+  "supported_items": "minecraft:brush",
+  "primary_items": "minecraft:brush",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "magnetic_enchantment:magnetic"
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:play_sound",
+          "sound": "minecraft:entity.enderman.teleport",
+          "volume": 0.7,
+          "pitch": 1
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 4
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:random_chance",
+          "chance": 0.1
+        },
+        "effect": {
+          "type": "minecraft:summon_entity",
+          "entity": "minecraft:endermite"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "primary_items": "minecraft:piglin_head",
+  "anvil_cost": 15,
+  "description": "Piglin Strength",
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:strength",
+          "min_duration": 10,
+          "max_duration": 10.5,
+          "min_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          }
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:weather_check",
+              "raining": false,
+              "thundering": false
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "dimension": "minecraft:overworld",
+                  "light": {
+                    "light": {
+                      "min": 14,
+                      "max": 15
+                    }
+                  },
+                  "can_see_sky": true
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:hunger",
+          "min_duration": 10,
+          "max_duration": 10.5,
+          "min_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          }
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:location_check",
+          "offsetY": 0,
+          "predicate": {
+            "fluid": {
+              "fluids": [
+                "minecraft:flowing_water",
+                "minecraft:water"
+              ]
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:poison",
+          "min_duration": 5,
+          "max_duration": 5.5,
+          "min_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "max_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": "minecraft:piglin_head",
+  "weight": 1
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:brush",
+  "addition": "minecraft:echo_shard",
+  "template": "minecraft:ender_eye",
+  "result": {
+    "id": "minecraft:brush",
+    "components": {
+      "minecraft:enchantments": {
+        "magnetic_enchantment:magnetic": 1
+      },
+      "minecraft:item_name": {
+        "text": "Magnetic brush",
+        "italic": false
+      },
+      "minecraft:rarity": "epic"
+    },
+    "count": 1
+  }
+}

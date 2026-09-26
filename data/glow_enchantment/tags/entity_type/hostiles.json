@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:undead",
+    "#minecraft:illager",
+    "#minecraft:raiders",
+    "minecraft:elder_guardian",
+    "minecraft:guardian"
+  ]
+}

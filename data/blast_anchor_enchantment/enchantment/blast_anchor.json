@@ -1,0 +1,32 @@
+{
+  "description": "Blast Anchor",
+  "weight": 2,
+  "max_level": 4,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "chest"
+  ],
+  "supported_items": "#minecraft:chest_armor",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:explosion_knockback_resistance",
+        "id": "blast_anchor_enchantment:enchantment.blast_resist",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

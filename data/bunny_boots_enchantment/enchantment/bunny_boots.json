@@ -1,0 +1,43 @@
+{
+  "description": "Bunny Boots",
+  "supported_items": "#minecraft:foot_armor",
+  "primary_items": "#minecraft:foot_armor",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:jump_strength",
+        "id": "bunny_boots_enchantment:jump",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "bunny_boots_enchantment:fall",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 4,
+          "per_level_above_first": 4
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

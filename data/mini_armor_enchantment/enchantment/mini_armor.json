@@ -1,0 +1,28 @@
+{
+  "description": "Mini Armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:scale",
+        "id": "mini_armor_enchantment:scale",
+        "amount": -0.25,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

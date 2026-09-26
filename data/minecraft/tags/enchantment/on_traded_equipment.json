@@ -1,0 +1,17 @@
+{
+  "values": [
+    "anchor_enchantment:anchor",
+    "antigravity_enchantment:antigravity",
+    "attack_speed_plus_enchantment:attack_speed_plus",
+    "blast_anchor_enchantment:blast_anchor",
+    "bunny_boots_enchantment:bunny_boots",
+    "dolphin_swim_enchantment:dolphin_swim",
+    "dragon_vision_enchantment:dragon_vision",
+    "long_reach_enchantment:long_reach",
+    "magnetic_enchantment:magnetic",
+    "mini_armor_enchantment:mini_armor",
+    "piglin_strength_enchantment:piglin_strength",
+    "turtle_master_enchantment:turtle_master",
+    "wither_presence_enchantment:wither_presence"
+  ]
+}

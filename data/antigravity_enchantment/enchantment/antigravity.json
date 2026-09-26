@@ -1,0 +1,46 @@
+{
+  "description": "Antigravity",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:foot_armor",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:gravity",
+        "id": "antigravity_enchantment:gravity",
+        "amount": {
+          "type": "minecraft:lookup",
+          "values": [
+            -0.45,
+            -0.7,
+            -0.75
+          ],
+          "fallback": -0.75
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "antigravity_enchantment:safe_fall",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 4,
+          "per_level_above_first": 4
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

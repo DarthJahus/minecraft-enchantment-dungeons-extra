@@ -1,0 +1,91 @@
+{
+  "description": "Glow",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 1,
+  "max_level": 2,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 30,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "glow_enchantment:make_glow_1"
+        },
+        "requirements": {
+          "type": "minecraft:float_value_check",
+          "value": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          },
+          "test": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "glow_enchantment:make_glow_2"
+        },
+        "requirements": {
+          "type": "minecraft:float_value_check",
+          "value": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          },
+          "test": {
+            "min": 2.0,
+            "max": 2.0
+          }
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "glow_enchantment:make_glow_3"
+        },
+        "requirements": {
+          "type": "minecraft:float_value_check",
+          "value": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          },
+          "test": {
+            "min": 3.0,
+            "max": 3.0
+          }
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

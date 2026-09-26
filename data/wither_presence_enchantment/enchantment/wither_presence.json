@@ -1,0 +1,58 @@
+{
+  "description": "Wither Presence",
+  "supported_items": "minecraft:wither_skeleton_skull",
+  "primary_items": "minecraft:wither_skeleton_skull",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 30,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:invisibility",
+          "min_duration": 4.5,
+          "max_duration": 5.5,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:random_chance",
+          "chance": 0.01
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_mob_effect",
+              "to_apply": "minecraft:wither",
+              "min_duration": 0.5,
+              "max_duration": 1.5,
+              "min_amplifier": 0,
+              "max_amplifier": 0
+            },
+            {
+              "type": "minecraft:damage_entity",
+              "damage_type": "minecraft:wither",
+              "min_damage": 0.5,
+              "max_damage": 2
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
