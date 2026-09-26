@@ -1,5 +1,5 @@
 {
-  "description": "Attack Speed +",
+  "description": "Attack Speed+",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -14,7 +14,7 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:swords",
+  "supported_items": "#minecraft:enchantable/sword",
   "effects": {
     "minecraft:attributes": [
       {

@@ -19,33 +19,30 @@
   "effects": {
     "minecraft:tick": [
       {
-        "requirements": {
-          "type": "minecraft:all_of",
-          "terms": [
-            {
-              "type": "minecraft:all_of",
-              "terms": [
-                {
-                  "type": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "movement": {
-                      "speed": 0
-                    }
+        "requirements": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "movement": {
+                    "speed": 0
                   }
                 }
-              ]
-            }
-          ]
-        },
+              }
+            ]
+          }
+        ],
         "effect": {
           "type": "minecraft:all_of",
           "effects": [
             {
               "type": "minecraft:apply_mob_effect",
               "to_apply": "minecraft:slowness",
-              "min_duration": 5.5,
-              "max_duration": 4.5,
+              "min_duration": 5.0,
+              "max_duration": 5.75,
               "min_amplifier": {
                 "type": "minecraft:linear",
                 "base": 1,
@@ -60,8 +57,8 @@
             {
               "type": "minecraft:apply_mob_effect",
               "to_apply": "minecraft:resistance",
-              "min_duration": 4.5,
-              "max_duration": 5.5,
+              "min_duration": 5.0,
+              "max_duration": 5.75,
               "min_amplifier": {
                 "type": "minecraft:linear",
                 "base": 1,

@@ -7,12 +7,12 @@
     "id": "minecraft:brush",
     "components": {
       "minecraft:enchantments": {
-        "magnetic_enchantment:magnetic": 1
+        "levels": {
+          "magnetic_enchantment:magnetic": 1
+        },
+        "show_in_tooltip": false
       },
-      "minecraft:item_name": {
-        "text": "Magnetic brush",
-        "italic": false
-      },
+      "minecraft:item_name": "\"Magnetic brush\"",
       "minecraft:rarity": "epic"
     },
     "count": 1

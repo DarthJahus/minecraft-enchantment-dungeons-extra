@@ -20,7 +20,7 @@
     "minecraft:tick": [
       {
         "requirements": {
-          "type": "minecraft:entity_properties",
+          "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "location": {
@@ -49,7 +49,7 @@
       },
       {
         "requirements": {
-          "type": "minecraft:entity_properties",
+          "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
             "location": {

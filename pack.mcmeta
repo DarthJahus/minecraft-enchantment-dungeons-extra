@@ -1,5 +1,6 @@
 {
   "pack": {
+    "pack_format": 61,
     "description": [
       {
         "text": "Enchantment Dungeons Addon",
@@ -13,8 +14,6 @@
         "text": "github.com/darthjahus",
         "color": "#683edd"
       }
-    ],
-    "min_format": 121.0,
-    "max_format": 121.0
+    ]
   }
 }

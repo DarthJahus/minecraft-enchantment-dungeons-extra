@@ -14,7 +14,7 @@
   "slots": [
     "feet"
   ],
-  "supported_items": "#minecraft:foot_armor",
+  "supported_items": "#minecraft:enchantable/foot_armor",
   "effects": {
     "minecraft:attributes": [
       {

@@ -35,17 +35,7 @@
       {
         "effect": {
           "type": "minecraft:change_item_damage",
-          "amount": 4
-        }
-      },
-      {
-        "requirements": {
-          "type": "minecraft:random_chance",
-          "chance": 0.1
-        },
-        "effect": {
-          "type": "minecraft:summon_entity",
-          "entity": "minecraft:endermite"
+          "amount": 8
         }
       }
     ]
