@@ -1,8 +1,9 @@
 # Enchantment Dungeons Extra
 
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/jahus-dungeons-enchantments-extra?style=for-the-badge&logo=modrinth&label=MODRINTH)](https://modrinth.com/datapack/jahus-dungeons-enchantments-extra)
-
 A collection of extra enchantments designed as an addon to the [Dungeons Enchantments](https://modrinth.com/datapack/jahus-dungeons-enchantments) datapack.
+
+[![Modrinth](https://img.shields.io/modrinth/dt/jahus-dungeons-enchantments-extra?logo=modrinth&label=Modrinth)](https://modrinth.com/datapack/jahus-dungeons-enchantments-extra)
+[![CurseForge](https://img.shields.io/curseforge/dt/1720155?logo=curseforge&label=CurseForge)](https://www.curseforge.com/projects/1720155)
 
 - [Anchor](#anchor): Resist knockback.
 - [Antigravity](#antigravity): Reduce gravity and increase safe fall distance.
