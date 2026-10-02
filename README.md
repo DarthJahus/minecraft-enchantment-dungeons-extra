@@ -27,7 +27,6 @@ A collection of extra enchantments designed as an addon to the [Dungeons Enchant
 Increases knockback resistance.
 
 - Supported: Chest armor
-- In Enchanting Table: Yes
 
 | Level | Knockback Resistance |
 |-------|----------------------|
@@ -41,7 +40,6 @@ Increases knockback resistance.
 Reduces gravity and increases safe fall distance.
 
 - Supported: Boots
-- In Enchanting Table: Yes
 
 | Level | Gravity multiplier | Safe fall distance |
 |-------|--------------------|--------------------|
@@ -54,7 +52,7 @@ Reduces gravity and increases safe fall distance.
 Greatly increases attack speed on swords.
 
 - Supported: Swords
-- In Enchanting Table: Yes
+- **Inspired by:** Minecraft Dungeons *Frenzied* / *Dynamo*, simplified to a flat sword bonus
 
 | Level | Attack Speed |
 |-------|--------------|
@@ -65,7 +63,6 @@ Greatly increases attack speed on swords.
 Increases resistance to explosion knockback.
 
 - Supported: Chest armor
-- In Enchanting Table: Yes
 
 | Level | Explosion Knockback Resistance |
 |-------|--------------------------------|
@@ -79,7 +76,6 @@ Increases resistance to explosion knockback.
 Increases jump strength and safe fall distance.
 
 - Supported: Boots
-- In Enchanting Table: Yes
 
 | Level | Jump Strength | Safe fall distance |
 |-------|---------------|--------------------|
@@ -91,7 +87,6 @@ Increases jump strength and safe fall distance.
 Applies Dolphin's Grace while moving in water or lava (with air above the head).
 
 - Supported: Boots
-- In Enchanting Table: Yes
 
 | Level | Amplifier |
 |-------|-----------|
@@ -107,7 +102,6 @@ While wearing a Dragon Head:
 - In high light (11–15): Blindness
 
 - Supported: Dragon Head
-- In Enchanting Table: Yes
 - Max level: 1
 
 ## Glow
@@ -115,7 +109,6 @@ While wearing a Dragon Head:
 On attack, makes nearby hostile mobs glow.
 
 - Supported: Weapons
-- In Enchanting Table: No (treasure)
 - Anvil cost: 30
 
 | Level | Range | Duration |
@@ -128,7 +121,6 @@ On attack, makes nearby hostile mobs glow.
 Increases interaction ranges while holding a Blaze Rod in the offhand.
 
 - Supported: Blaze Rod (offhand)
-- In Enchanting Table: Yes
 - Max level: 1
 
 | Attribute                    | Bonus |
@@ -141,7 +133,6 @@ Increases interaction ranges while holding a Blaze Rod in the offhand.
 When you hit a block with an enchanted Brush, nearby items are pulled toward you.
 
 - Supported: Brush
-- In Enchanting Table: Yes
 - Max level: 1
 - Side effects: damages the brush, plays an Enderman teleport sound, 10 % chance to spawn an Endermite
 
@@ -156,7 +147,6 @@ When you hit a block with an enchanted Brush, nearby items are pulled toward you
 Reduces the wearer's scale by 25 %.
 
 - Supported: Any armor
-- In Enchanting Table: Yes
 - Max level: 1
 
 | Level | Scale |
@@ -171,7 +161,6 @@ While wearing a Piglin Head, grants Strength. Comes with drawbacks:
 - In water: Poison
 
 - Supported: Piglin Head
-- In Enchanting Table: Yes
 
 | Level | Strength amplifier | Drawback amplifier |
 |-------|--------------------|--------------------|
@@ -184,7 +173,6 @@ While wearing a Piglin Head, grants Strength. Comes with drawbacks:
 While wearing a Turtle Helmet and standing still, grants Resistance and Slowness (similar to the Turtle Master potion).
 
 - Supported: Turtle Helmet
-- In Enchanting Table: Yes
 
 | Level | Resistance / Slowness amplifier |
 |-------|---------------------------------|
@@ -200,9 +188,9 @@ While wearing a Wither Skeleton Skull:
 - Small chance (1 %) each tick to apply brief Wither and take wither damage
 
 - Supported: Wither Skeleton Skull
-- In Enchanting Table: Yes
 - Max level: 1
 - Anvil cost: 30
+- **Inspired by:** Minecraft Dungeons *Shadow Form*
 
 ---
 
