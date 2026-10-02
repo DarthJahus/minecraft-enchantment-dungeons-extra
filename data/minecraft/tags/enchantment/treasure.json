@@ -13,6 +13,13 @@
     "piglin_strength_enchantment:piglin_strength",
     "turtle_master_enchantment:turtle_master",
     "wither_presence_enchantment:wither_presence",
-    "glow_enchantment:glow"
+    "glow_enchantment:glow",
+    "berserk_enchantment:berserk",
+    "shadowcloak_enchantment:shadowcloak",
+    "rampaging_enchantment:rampaging",
+    "frenzied_enchantment:frenzied",
+    "cowardice_enchantment:cowardice",
+    "guarding_strike_enchantment:guarding_strike",
+    "weakening_enchantment:weakening"
   ]
 }

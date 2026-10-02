@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "berserk_enchantment:berserk",
+                      "levels": { "min": 3, "max": 3 }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "berserk_enchantment:on_kill_3" }
+}

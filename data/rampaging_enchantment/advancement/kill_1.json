@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "rampaging_enchantment:rampaging",
+                      "levels": { "min": 1, "max": 1 }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "rampaging_enchantment:on_kill_1" }
+}

@@ -19,6 +19,13 @@ A collection of extra enchantments designed as an addon to the [Dungeons Enchant
 - [Piglin Strength](#piglin-strength): Gain Strength, with drawbacks in sunlight and water.
 - [Turtle Master](#turtle-master): Gain Resistance and Slowness while standing still.
 - [Wither Presence](#wither-presence): Become invisible, with a small chance of self-wither.
+- [Berserk](#berserk): Strength after each kill.
+- [Shadowcloak](#shadowcloak): Invisibility after each kill.
+- [Rampaging](#rampaging): Chance of high attack speed after a kill.
+- [Frenzied](#frenzied): Haste when hit at low health.
+- [Cowardice](#cowardice): Speed after being hit.
+- [Guarding Strike](#guarding-strike): Resistance after each kill.
+- [Weakening](#weakening): Weaken nearby hostiles on hit.
 
 ---
 
@@ -192,6 +199,98 @@ While wearing a Wither Skeleton Skull:
 - Anvil cost: 30
 - **Inspired by:** Minecraft Dungeons *Shadow Form*
 
----
+## Berserk
 
-**Note:** Most enchantments are available in the enchanting table, on traded equipment, in random loot, and as treasure. Glow is treasure-only.
+Grants Strength after each kill with the enchanted weapon.
+
+- Supported: Weapons
+- Namespace: `berserk_enchantment`
+
+| Level | Effect               |
+|-------|----------------------|
+| 1     | Strength I for 3 s   |
+| 2     | Strength II for 3 s  |
+| 3     | Strength II for 5 s  |
+
+## Shadowcloak
+
+Grants Invisibility after each kill with the enchanted weapon.
+
+- Supported: Weapons
+- Namespace: `shadowcloak_enchantment`
+- **Inspired by:** Minecraft Dungeons II *Shadowcloak* (chance to become invisible on kill). Java version always applies a short invisibility.
+
+| Level | Duration |
+|-------|----------|
+| 1     | 3 s      |
+| 2     | 5 s      |
+
+## Rampaging
+
+After defeating a mob, has a 10 % chance to greatly increase attack speed for a short time.
+
+- Supported: Weapons
+- Namespace: `rampaging_enchantment`
+- **Inspired by:** Minecraft Dungeons *Rampaging* (10 % chance, +50 % attack speed, 5 / 10 / 15 s)
+
+| Level | Duration  |
+|-------|-----------|
+| 1     | 5 s       |
+| 2     | 10 s      |
+| 3     | 15 s      |
+
+## Frenzied
+
+When hit while wearing enchanted armor and below a health threshold, grants Haste. Higher levels unlock stronger Haste in the danger zone and weaker Haste in wider HP bands.
+
+- Supported: Head armor
+- Namespace: `frenzied_enchantment`
+- **Inspired by:** Minecraft Dungeons *Frenzied* (attack speed below half health). Adapted to hit-triggered graduated tiers for Java.
+
+| Enchant level | HP below 30 %   | HP below 50 %  | HP below 60 % |
+|---------------|-----------------|----------------|---------------|
+| 1             | Haste I (3 s)   | —              | —             |
+| 2             | Haste II (3 s)  | Haste I (3 s)  | —             |
+| 3             | Haste III (3 s) | Haste II (3 s) | Haste I (3 s) |
+
+## Cowardice
+
+When hit, grants a short Speed burst.
+
+- Supported: Boots
+- Namespace: `cowardice_enchantment`
+- **Inspired by:** Minecraft Dungeons *Rush* (movement speed after taking damage). Named Cowardice for flavor (Dungeons *Cowardice* is a different full-HP damage bonus).
+
+| Level | Effect           |
+|-------|------------------|
+| 1     | Speed I for 2 s  |
+| 2     | Speed II for 3 s |
+| 3     | Speed II for 5 s |
+
+## Guarding Strike
+
+After defeating a mob, gains temporary damage reduction.
+
+- Supported: Weapons
+- Namespace: `guarding_strike_enchantment`
+- **Inspired by:** Minecraft Dungeons *Guarding Strike* (50 % damage shield for 2 / 3 / 4 s). Java uses Resistance I (~20 % reduction) for the same durations.
+
+| Level | Effect               |
+|-------|----------------------|
+| 1     | Resistance I for 2 s |
+| 2     | Resistance I for 3 s |
+| 3     | Resistance I for 4 s |
+
+## Weakening
+
+On attack, weakens nearby hostile mobs.
+
+- Supported: Weapons
+- Namespace: `weakening_enchantment`
+- **Inspired by:** Minecraft Dungeons *Weakening* (−20 / 30 / 40 % enemy damage for 5 s nearby). Java uses Weakness (flat reduction) with tighter ranges for balance.
+
+| Level | Effect              | Range      |
+|-------|---------------------|------------|
+| 1     | Weakness I for 5 s  | ≤ 3 blocks |
+| 2     | Weakness II for 5 s | ≤ 3 blocks |
+| 3     | Weakness II for 5 s | ≤ 5 blocks |
