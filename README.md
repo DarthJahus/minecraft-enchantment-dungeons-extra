@@ -7,7 +7,6 @@ A collection of extra enchantments designed as an addon to the [Dungeons Enchant
 
 - [Anchor](#anchor): Resist knockback.
 - [Antigravity](#antigravity): Reduce gravity and increase safe fall distance.
-- [Aquajet](#aquajet): Increase nautilus movement speed.
 - [Attack Speed +](#attack-speed-): Greatly increase sword attack speed.
 - [Blast Anchor](#blast-anchor): Resist explosion knockback.
 - [Bunny Boots](#bunny-boots): Jump higher and fall farther safely.
@@ -54,24 +53,6 @@ Reduces gravity and increases safe fall distance.
 | 1     | −45 %              | +4                 |
 | 2     | −70 %              | +8                 |
 | 3     | −75 %              | +12                |
-
-## Aquajet
-
-Increases movement speed on nautilus armor.
-
-- Supported: Nautilus armor
-- Anvil cost: 40
-- Max level: 4
-
-| Level | Movement Speed |
-|-------|----------------|
-| 1     | +1             |
-| 2     | +1.5           |
-| 3     | +2             |
-| 4\*    | +2.5           |
-| 5     | +3             |
-
-- Levels 5 is not obtainable through normal gameplay (enchanting table, anvil, villagers, or standard loot) and only exists through admin commands or special loot.
 
 ## Attack Speed +
 
